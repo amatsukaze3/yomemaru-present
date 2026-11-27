@@ -95,3 +95,16 @@
 - 端末に保存するきろくは `flora2:` で始まるキーなので、ほかの アプリの きろくとは まざりません
 
 こえ：VOICEVOX:小夜/SAYO／VOICEVOX:黒沢冴白（ローマ字フローラちゃん おおもじ）
+
+## ローマ字フローラちゃん 体験版（`romaji-taiken/`）
+
+プレゼント用の 体験版です。ローマ字フローラちゃん（`romaji/`）の コピーで、つぎの ところだけ ちがいます。
+
+公開ページ：https://amatsukaze3.github.io/yomemaru-present/romaji-taiken/
+
+- 文字は a・i・u・e・o・ka・ki・ku・ke・ko の 10もじ だけ（`src/data/kana.ts` の ROWS を あ行・か行 だけに）。おぼえる・チャレンジ・シューティング・スタンプ（10こ）も この 10もじ だけ
+- フローラちゃんシューティングは さいしょから できる
+- じゃままるくん（これで ばっちり モード → カンペキテスト）も さいしょから できる（`src/lib/loginDays.ts` の batchiriUnlocked）
+- アセスメントモードは ない（フローラちゃんを 5かい タップしても でない）
+- 端末に 保存する きろくは `floraTaiken:` で はじまる キーなので、ローマ字フローラちゃんの きろくとは まざらない（こえの とうろくも べつ）
+- つくりかた：`romaji-taiken/source/` で `npm install` → `npm run build:single` → `dist-single/index.html` を `romaji-taiken/index.html` に
